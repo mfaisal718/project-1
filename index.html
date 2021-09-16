@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script defer src="./script.js"></script>
+    <link rel="stylesheet" href="style.css"></script>
 </head>
 <body>
-    
+ <header>
+     <h1>Crypto X</h1>
+     <img>https://imgur.com/gallery/6L6e3UZ</img> 
+     <p></p>
+ </header>   
+<form>
+    <input type="text" placeholder="Enter Crypto Ticker" id="crypto"/>
+    <input type="text" placeholder="Enter Currency Ticker" id="curr"/>
+    <button type="submit" class="btn btn-xs btn-" id= 'submit'>Get Rate</button>
+</form>
+<h2>Xchange Info</h2>
+<main>
+<p id="rates"></p>
+</main>
 </body>
 </html>
