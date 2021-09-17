@@ -1,6 +1,6 @@
 let rateData;
 
-const $rate = $("#rates");
+const $rate = $("#rates"); 
 
 function handleGetRate (event) {
     event.preventDefault();
@@ -22,11 +22,11 @@ $.ajax({
 };
 
 function render() {
-    $curr = $("#curr");
 
-
-    console.log($(rateData));
+    $curr = $("#curr").val();
+    console.log(rateData.data.rates.USD);
     console.log(rateData.data.rates)
-    $rate.text(rateData.data.rates);
+    console.log(rateData.data.rates[$curr]);
+    $rate.text(rateData.data.rates[$curr]);
 }
 $('form').on('submit', handleGetRate);
