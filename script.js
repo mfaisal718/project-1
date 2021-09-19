@@ -6,8 +6,8 @@ const $mainContent = $('main');
 
 function handleGetRate (event) {
     event.preventDefault();
-
     $crypto = $("#crypto");
+    
 $.ajax({
     url: `https://api.coinbase.com/v2/exchange-rates?currency=${$crypto.val()}`
 }).then(
@@ -25,7 +25,8 @@ $.ajax({
 
 function render() {
 
-    $curr = $("#curr").val();
+    $curr = $("#curr").val().toUpperCase();
+    console.log($curr);
     console.log(rateData.data.rates.USD);
     console.log(rateData.data.rates)
     console.log(rateData.data.rates[$curr]);
