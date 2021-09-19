@@ -31,9 +31,9 @@
   
   main {
     grid-area: content;
-    font-size: 200px, '<relative>';
+    font-size: 200%;
     font-weight: 500, bold;
-    color:rgb(250, 213, 3)
+    color:rgb(250, 213, 3); 
   }
   
   header, main {
