@@ -19,21 +19,32 @@
   
   header {
     grid-area: hdr;
-    background-color: #ff9e7a;
+    background-color: #0bf3e7;
   }
   
   form {
     grid-area: ftr;
-    background-color: #b1fcc8;
+    background-color: #fcf802;
   }
   
   main {
     grid-area: content;
-    background-color: #bf9df7;
   }
   
   header, main {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .hero-image {
+    background-image: url("https://i.giphy.com/media/xUn3C5pCbNmirpoBqM/giphy.webp" ");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn btn-xs btn- {
+      color:white;
+      background-color: darkgreen; 
+
   }

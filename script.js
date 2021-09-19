@@ -30,9 +30,6 @@ function render() {
     console.log(rateData.data.rates)
     console.log(rateData.data.rates[$curr]);
     $rate.text(rateData.data.rates[$curr]);
-    const $img = $('src="https://i.giphy.com/media/xUn3C5pCbNmirpoBqM/giphy.webp"')
-    
-    console.log($img.$fireworks)
-    $mainContent.append($img)
+
 }
 $('form').on('submit', handleGetRate);
