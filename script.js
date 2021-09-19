@@ -1,6 +1,8 @@
 let rateData;
 
-const $rate = $("#rates"); 
+const $rate = $("#rates");
+const $fireworks = $('#fireworks');
+const $mainContent = $('main'); 
 
 function handleGetRate (event) {
     event.preventDefault();
@@ -28,5 +30,9 @@ function render() {
     console.log(rateData.data.rates)
     console.log(rateData.data.rates[$curr]);
     $rate.text(rateData.data.rates[$curr]);
+    const $img = $('src="https://i.giphy.com/media/xUn3C5pCbNmirpoBqM/giphy.webp"')
+    
+    console.log($img.$fireworks)
+    $mainContent.append($img)
 }
 $('form').on('submit', handleGetRate);
